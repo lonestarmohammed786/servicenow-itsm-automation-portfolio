@@ -1,0 +1,24 @@
+/*
+Project: Incident Caller Validation with GlideAjax
+Type: onChange Client Script
+Table: Incident [incident]
+Field: caller_id
+Purpose: Calls UserValidationUtils to check whether selected caller is inactive.
+*/
+
+function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue == '') {
+        return;
+    }
+
+    var ga = new GlideAjax('UserValidationUtils');
+    ga.addParam('sysparm_name', 'isInactive');
+    ga.addParam('sysparm_user_id', newValue);
+
+    ga.getXMLAnswer(function(answer) {
+        if (answer == 'true') {
+            g_form.addInfoMessage('Caller is inactive and cannot be used.');
+            g_form.setValue('caller_id', '');
+        }
+    });
+}
