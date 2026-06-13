@@ -43,6 +43,11 @@ Real-time Incident form validation using GlideAjax, Client Scripts, and client-c
 
 Inbound and outbound ServiceNow REST integration project. Includes Scripted REST APIs for creating Incidents and adding work notes, RESTMessageV2 outbound notifications for Critical and Resolved Incidents, and integration logging through work notes and system logs.
 
+### 05. Laptop Request Approval & Fulfillment Automation
+
+End-to-end Service Catalog automation for laptop requests. Includes Catalog Client Scripts for request validation, laptop type rules, rush request handling, and Flow Designer lifecycle documentation for manager approval, Catalog Task creation, fulfillment routing, and RITM closure.
+
+
 ## Repository Structure
 
 ```text
@@ -52,6 +57,7 @@ servicenow-itsm-automation-portfolio/
 ├── 02-incident-form-behavior-automation/
 ├── 03-incident-caller-validation-glideajax/
 ├── 04-incident-integration-automation/
+├── 05-laptop-request-approval-fulfillment-automation/
 │
 └── README.md
 ```
