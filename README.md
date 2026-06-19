@@ -47,9 +47,14 @@ Inbound and outbound ServiceNow REST integration project. Includes Scripted REST
 
 End-to-end Service Catalog automation for laptop requests. Includes Catalog Client Scripts for request validation, laptop type rules, rush request handling, and Flow Designer lifecycle documentation for manager approval, Catalog Task creation, fulfillment routing, and RITM closure.
 
+### 06. Import Set & Transform Map Automation
+
+Production-style Import Set and Transform Map automation for importing laptop asset data from an external CSV file into ServiceNow. Includes required field validation, Coalesce-based duplicate prevention, active user lookup, model reference lookup, status value conversion, asset tag format validation, skipped-row logging, and source-to-target field mapping.
+
 
 ## Repository Structure
 
+```text
 ```text
 servicenow-itsm-automation-portfolio/
 │
@@ -58,8 +63,11 @@ servicenow-itsm-automation-portfolio/
 ├── 03-incident-caller-validation-glideajax/
 ├── 04-incident-integration-automation/
 ├── 05-laptop-request-approval-fulfillment-automation/
+├── 06-import-set-transform-map-automation/
 │
 └── README.md
+```
+
 ```
 
 ## Disclaimer
