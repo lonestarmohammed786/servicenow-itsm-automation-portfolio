@@ -54,8 +54,6 @@ Production-style Import Set and Transform Map automation for importing laptop as
 
 ## Repository Structure
 
-```text
-```text
 servicenow-itsm-automation-portfolio/
 │
 ├── 01-incident-data-quality-automation/
@@ -66,9 +64,6 @@ servicenow-itsm-automation-portfolio/
 ├── 06-import-set-transform-map-automation/
 │
 └── README.md
-```
-
-```
 
 ## Disclaimer
 
