@@ -51,6 +51,9 @@ End-to-end Service Catalog automation for laptop requests. Includes Catalog Clie
 
 Production-style Import Set and Transform Map automation for importing laptop asset data from an external CSV file into ServiceNow. Includes required field validation, Coalesce-based duplicate prevention, active user lookup, model reference lookup, status value conversion, asset tag format validation, skipped-row logging, and source-to-target field mapping.
 
+### 07. Update Set Management & Deployment Validation Automation
+
+Production-style ServiceNow Update Set management and deployment validation project. Includes Update Set lifecycle documentation, deployment checklist, best practices, preview and commit guidance, backout planning, and post-deployment validation scripts to verify that key configuration records were moved successfully.
 
 ## Repository Structure
 
@@ -62,6 +65,7 @@ servicenow-itsm-automation-portfolio/
 ├── 04-incident-integration-automation/
 ├── 05-laptop-request-approval-fulfillment-automation/
 ├── 06-import-set-transform-map-automation/
+├── 07-update-set-management-deployment-automation/
 │
 └── README.md
 
