@@ -55,7 +55,14 @@ Production-style Import Set and Transform Map automation for importing laptop as
 
 Production-style ServiceNow Update Set management and deployment validation project. Includes Update Set lifecycle documentation, deployment checklist, best practices, preview and commit guidance, backout planning, and post-deployment validation scripts to verify that key configuration records were moved successfully.
 
+8. CMDB Data Quality & CI Relationship Automation
+
+Production-style ServiceNow CMDB automation project focused on improving Configuration Item data quality, preventing duplicate computer CIs, enforcing CI owner and support group requirements, requiring affected CI information for Priority 1 incidents, adding work notes when Incident CIs change, and using Background Scripts to identify incomplete CMDB records.
+
+
 ## Repository Structure
+
+Repository Structure
 
 servicenow-itsm-automation-portfolio/
 │
@@ -66,6 +73,7 @@ servicenow-itsm-automation-portfolio/
 ├── 05-laptop-request-approval-fulfillment-automation/
 ├── 06-import-set-transform-map-automation/
 ├── 07-update-set-management-deployment-automation/
+├── 08-cmdb-data-quality-ci-relationship-automation/
 │
 └── README.md
 
