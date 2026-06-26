@@ -127,6 +127,6 @@ These rules support a stronger ITSM process by helping teams:
 * Improve Incident-to-Problem visibility
 * Support future Change Management decisions
 
-## Recruiter-Friendly Summary
+## Summary
 
 This project demonstrates how ServiceNow can be used to move beyond basic ticket handling. It shows how automation can support Problem Management by detecting recurring Incidents, enforcing root cause documentation, validating Known Error details, and improving ITSM process governance.
