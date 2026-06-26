@@ -59,6 +59,11 @@ Production-style ServiceNow Update Set management and deployment validation proj
 
 Production-style ServiceNow CMDB automation project focused on improving Configuration Item data quality, preventing duplicate computer CIs, enforcing CI owner and support group requirements, requiring affected CI information for Priority 1 incidents, adding work notes when Incident CIs change, and using Background Scripts to identify incomplete CMDB records.
 
+### 9. Problem Management Root Cause Automation
+
+Production-style ServiceNow Problem Management automation project focused on detecting recurring Incidents, supporting root cause analysis, enforcing Known Error documentation, preventing duplicate active Problems, and improving the Incident-to-Problem lifecycle.
+This project includes repeat Incident detection for the same Configuration Item, automatic Problem creation when recurring Incidents are found, duplicate active Problem prevention, root cause note validation before Problem closure, workaround validation for Known Errors, Problem state change work notes, and Background Scripts to count related Incidents and identify repeated CI issues.
+
 
 ## Repository Structure
 
@@ -74,6 +79,7 @@ servicenow-itsm-automation-portfolio/
 ├── 06-import-set-transform-map-automation/
 ├── 07-update-set-management-deployment-automation/
 ├── 08-cmdb-data-quality-ci-relationship-automation/
+├── 09-problem-management-root-cause-automation/
 │
 └── README.md
 
