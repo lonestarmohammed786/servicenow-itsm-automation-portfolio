@@ -64,6 +64,11 @@ Production-style ServiceNow CMDB automation project focused on improving Configu
 Production-style ServiceNow Problem Management automation project focused on detecting recurring Incidents, supporting root cause analysis, enforcing Known Error documentation, preventing duplicate active Problems, and improving the Incident-to-Problem lifecycle.
 This project includes repeat Incident detection for the same Configuration Item, automatic Problem creation when recurring Incidents are found, duplicate active Problem prevention, root cause note validation before Problem closure, workaround validation for Known Errors, Problem state change work notes, and Background Scripts to count related Incidents and identify repeated CI issues.
 
+### 10. Change Management Risk & Approval Automation
+
+Production-style ServiceNow Change Management automation project focused on improving change planning, approval readiness, risk validation, emergency Change governance, and Problem-to-Change visibility.
+This project includes CI enforcement for high-risk Changes, implementation plan validation, backout plan validation, test plan validation, emergency Change justification requirements, Change state work note automation, Known Error to Change recommendation logic, and Background Scripts to identify Change Requests missing key planning data.
+
 
 ## Repository Structure
 
@@ -80,6 +85,7 @@ servicenow-itsm-automation-portfolio/
 ├── 07-update-set-management-deployment-automation/
 ├── 08-cmdb-data-quality-ci-relationship-automation/
 ├── 09-problem-management-root-cause-automation/
+├── 10-change-management-risk-approval-automation/
 │
 └── README.md
 
