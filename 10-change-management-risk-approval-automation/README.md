@@ -149,6 +149,4 @@ This project demonstrates practical understanding of ServiceNow Change Managemen
 
 It shows that automation is not only about creating records or making forms faster. It can also protect production environments by enforcing planning discipline, risk awareness, and approval readiness.
 
-Recruiters and hiring managers can see that this project connects multiple ITSM areas together:
-
 Incident Management, CMDB, Problem Management, Known Error documentation, and Change Management.
