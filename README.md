@@ -2,7 +2,7 @@
 
 A production-style ServiceNow ITSM automation portfolio focused on real-world ServiceNow administration, scripting, process automation, and ITSM workflow improvement.
 
-This portfolio demonstrates hands-on ServiceNow projects using Business Rules, Client Scripts, GlideAjax, Script Includes, Scripted REST APIs, RESTMessageV2, Flow Designer, Import Sets, Transform Maps, Update Sets, CMDB, Problem Management, Change Management, and ITSM process automation.
+This portfolio demonstrates hands-on ServiceNow projects using Business Rules, Client Scripts, GlideAjax, Script Includes, Scripted REST APIs, RESTMessageV2, Flow Designer, Import Sets, Transform Maps, Update Sets, CMDB, Problem Management, Change Management, SLA Management, and ITSM process automation.
 
 ---
 
@@ -10,7 +10,7 @@ This portfolio demonstrates hands-on ServiceNow projects using Business Rules, C
 
 This repository contains ServiceNow automation projects built in a ServiceNow Personal Developer Instance.
 
-The projects are designed around real-world ITSM scenarios such as Incident data quality, form behavior automation, caller validation, REST integrations, Service Catalog fulfillment, Import Set processing, Update Set deployment validation, CMDB data quality, Problem Management root cause automation, and Change Management risk validation.
+The projects are designed around real-world ITSM scenarios such as Incident data quality, form behavior automation, caller validation, REST integrations, Service Catalog fulfillment, Import Set processing, Update Set deployment validation, CMDB data quality, Problem Management root cause automation, Change Management risk validation, and SLA escalation automation.
 
 The goal of this portfolio is to demonstrate practical ServiceNow Administrator, ITSM Analyst, and Junior ServiceNow Developer skills using production-style patterns.
 
@@ -23,6 +23,7 @@ The goal of this portfolio is to demonstrate practical ServiceNow Administrator,
 * Service Catalog
 * Problem Management
 * Change Management
+* SLA Management
 * CMDB
 * Configuration Items
 * Business Rules
@@ -31,6 +32,7 @@ The goal of this portfolio is to demonstrate practical ServiceNow Administrator,
 * Script Includes
 * GlideRecord
 * GlideAggregate basics
+* Nested GlideRecord queries
 * Scripted REST APIs
 * RESTMessageV2
 * JSON payload handling
@@ -41,6 +43,8 @@ The goal of this portfolio is to demonstrate practical ServiceNow Administrator,
 * Coalesce-based duplicate prevention
 * Update Sets and deployment practices
 * Background Scripts
+* SLA breach validation
+* Escalation logic
 * ITSM process automation
 
 ---
@@ -62,6 +66,8 @@ It includes projects that demonstrate:
 * Incident-to-CI visibility
 * Problem Management root cause controls
 * Change Management risk and approval readiness validation
+* SLA Management visibility and escalation automation
+* Background Scripts for operational audits and data quality checks
 
 ---
 
@@ -111,6 +117,12 @@ Production-style ServiceNow Change Management automation project focused on impr
 
 This project includes CI enforcement for high-risk Changes, implementation plan validation, backout plan validation, test plan validation, emergency Change justification requirements, Change state work note automation, Known Error to Change recommendation logic, and Background Scripts to identify Change Requests missing key planning data.
 
+### 11. SLA Management & Escalation Automation
+
+Production-style ServiceNow SLA Management automation project focused on SLA visibility, breach prevention, escalation handling, and Incident support process improvement.
+
+This project includes SLA review note validation for Priority 1 Incidents, high SLA breach risk work note automation, Incident escalation logic, assignment group SLA risk notification notes, breached SLA Background Scripts, active Priority 1 Incident SLA validation, and SLA count checks for critical Incidents.
+
 ---
 
 ## Repository Structure
@@ -128,6 +140,7 @@ servicenow-itsm-automation-portfolio/
 ├── 08-cmdb-data-quality-ci-relationship-automation/
 ├── 09-problem-management-root-cause-automation/
 ├── 10-change-management-risk-approval-automation/
+├── 11-sla-management-escalation-automation/
 │
 └── README.md
 ```
@@ -148,13 +161,14 @@ Completed:
 * CMDB data quality automation
 * Problem Management root cause automation
 * Change Management risk and approval automation
+* SLA Management and escalation automation
 
 Planned next:
 
-* SLA Management & Escalation Automation
 * Knowledge Management Publishing Automation
 * Service Portal Request Experience Automation
 * Reporting & Dashboard Automation
+* Flow Designer Approval Governance Automation
 
 ---
 
@@ -172,3 +186,4 @@ These examples are intended to demonstrate ServiceNow scripting concepts, ITSM a
 
 **Mohammed Nadeem**
 ServiceNow Administrator | ITSM Analyst | Junior ServiceNow Developer
+
