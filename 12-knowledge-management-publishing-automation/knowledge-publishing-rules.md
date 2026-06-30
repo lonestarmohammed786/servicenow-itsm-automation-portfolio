@@ -161,6 +161,6 @@ These rules support stronger Knowledge Management by helping teams:
 * Identify outdated or expired articles
 * Strengthen support documentation governance
 
-## Recruiter-Friendly Summary
+## Summary
 
 This project demonstrates how ServiceNow automation can support Knowledge Management by validating article readiness, improving publishing discipline, creating reusable documentation from resolved Incidents, and helping support teams maintain cleaner Knowledge content.
