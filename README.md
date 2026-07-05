@@ -1,14 +1,14 @@
 # ServiceNow ITSM Automation Portfolio
 
-A production-style ServiceNow ITSM automation portfolio focused on real-world ServiceNow administration, scripting, process automation, reporting, asset lifecycle governance, and ITSM workflow improvement.
+A production-style ServiceNow ITSM automation portfolio focused on real-world ServiceNow administration, scripting, process automation, reporting, asset lifecycle governance, access governance, and ITSM workflow improvement.
 
-This portfolio demonstrates hands-on ServiceNow projects using Business Rules, Client Scripts, GlideAjax, Script Includes, Scripted REST APIs, RESTMessageV2, Flow Designer, Import Sets, Transform Maps, Update Sets, CMDB, Problem Management, Change Management, SLA Management, Knowledge Management, Reporting & Dashboard Automation, Asset Lifecycle Automation, and ITSM process automation.
+This portfolio demonstrates hands-on ServiceNow projects using Business Rules, Client Scripts, GlideAjax, Script Includes, Scripted REST APIs, RESTMessageV2, Flow Designer, Import Sets, Transform Maps, Update Sets, CMDB, Problem Management, Change Management, SLA Management, Knowledge Management, Reporting & Dashboard Automation, Asset Lifecycle Automation, Security & Access Control Automation, and ITSM process automation.
 
 ## Overview
 
 This repository contains ServiceNow automation projects built in a ServiceNow Personal Developer Instance.
 
-The projects are designed around real-world ITSM scenarios such as Incident data quality, form behavior automation, caller validation, REST integrations, Service Catalog fulfillment, Import Set processing, Update Set deployment validation, CMDB data quality, Problem Management root cause automation, Change Management risk validation, SLA escalation automation, Knowledge Management publishing automation, ITSM reporting/dashboard preparation, and Asset Lifecycle automation.
+The projects are designed around real-world ITSM scenarios such as Incident data quality, form behavior automation, caller validation, REST integrations, Service Catalog fulfillment, Import Set processing, Update Set deployment validation, CMDB data quality, Problem Management root cause automation, Change Management risk validation, SLA escalation automation, Knowledge Management publishing automation, ITSM reporting/dashboard preparation, Asset Lifecycle automation, and ServiceNow access governance.
 
 The goal of this portfolio is to demonstrate practical ServiceNow Administrator, ITSM Analyst, and Junior ServiceNow Developer skills using production-style patterns.
 
@@ -23,9 +23,11 @@ The goal of this portfolio is to demonstrate practical ServiceNow Administrator,
 * Knowledge Management
 * Reporting & Dashboard Automation
 * Asset Lifecycle Automation
+* Security & Access Control Automation
 * Hardware Asset Management basics
 * CMDB
 * Configuration Items
+* User, group, and role validation
 * Business Rules
 * Client Scripts
 * GlideAjax
@@ -52,6 +54,7 @@ The goal of this portfolio is to demonstrate practical ServiceNow Administrator,
 * Operational metrics scripting
 * Dashboard metric preparation
 * ITSM reporting logic
+* Access governance reporting
 * Reusable helper functions
 * ITSM process automation
 
@@ -79,7 +82,9 @@ It includes projects that demonstrate:
 * Operational metrics for Incidents, SLAs, Changes, Knowledge, and CIs
 * Asset lifecycle governance and hardware asset validation
 * Asset-to-CMDB relationship checks and synchronization
-* Background Scripts for operational audits, reporting, and data quality checks
+* User, group, and role access governance checks
+* Inactive user, group membership, and elevated access audit scripts
+* Background Scripts for operational audits, reporting, access review, and data quality checks
 
 ## Projects
 
@@ -151,9 +156,15 @@ Production-style ServiceNow Asset Lifecycle automation project focused on hardwa
 
 This project includes Assigned to validation before assets are marked In Use, retirement prevention for assigned assets, Asset-to-CI assigned user synchronization, asset lifecycle work note automation, hardware assets missing linked CI checks, assigned asset counts by user using GlideAggregate, and retired asset review scripts.
 
+### 15. ServiceNow Security & Access Control Automation
+
+Production-style ServiceNow security and access governance automation project focused on user validation, group membership checks, role assignment controls, and access audit reporting.
+
+This project includes blocking Incident assignment to inactive users, validating assigned user membership in selected assignment groups, preventing role assignments to inactive users, identifying inactive users with roles, counting users by role using GlideAggregate, auditing inactive users still in groups, and identifying elevated/admin-style access for review.
+
 ## Repository Structure
 
-```text
+```text id="6zgbgs"
 servicenow-itsm-automation-portfolio/
 │
 ├── 01-incident-data-quality-automation/
@@ -170,6 +181,7 @@ servicenow-itsm-automation-portfolio/
 ├── 12-knowledge-management-publishing-automation/
 ├── 13-reporting-dashboard-automation/
 ├── 14-asset-lifecycle-automation/
+├── 15-security-access-control-automation/
 │
 └── README.md
 ```
@@ -192,10 +204,10 @@ servicenow-itsm-automation-portfolio/
 * Knowledge Management publishing automation
 * Reporting and dashboard automation
 * Asset Lifecycle automation
+* ServiceNow Security and Access Control automation
 
 ### Planned Next
 
-* ServiceNow Security & Access Control Automation
 * Major Incident Management Automation
 * Scheduled Jobs & Notifications Automation
 * HR / Employee Service Request Automation
@@ -206,7 +218,7 @@ All scripts in this repository are sample portfolio scripts created in a Service
 
 No client, company, customer, or production data is included.
 
-These examples are intended to demonstrate ServiceNow scripting concepts, ITSM automation patterns, reporting logic, asset lifecycle governance, and practical ServiceNow administration/development skills.
+These examples are intended to demonstrate ServiceNow scripting concepts, ITSM automation patterns, reporting logic, asset lifecycle governance, access governance, and practical ServiceNow administration/development skills.
 
 ## Author
 
