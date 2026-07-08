@@ -1,14 +1,14 @@
 # ServiceNow ITSM Automation Portfolio
 
-A production-style ServiceNow ITSM automation portfolio focused on real-world ServiceNow administration, scripting, process automation, reporting, asset lifecycle governance, access governance, Major Incident Management, and ITSM workflow improvement.
+A production-style ServiceNow ITSM automation portfolio focused on real-world ServiceNow administration, scripting, process automation, reporting, asset lifecycle governance, access governance, Major Incident Management, scheduled automation, notifications, and ITSM workflow improvement.
 
-This portfolio demonstrates hands-on ServiceNow projects using Business Rules, Client Scripts, GlideAjax, Script Includes, Scripted REST APIs, RESTMessageV2, Flow Designer, Import Sets, Transform Maps, Update Sets, CMDB, Problem Management, Change Management, SLA Management, Knowledge Management, Reporting & Dashboard Automation, Asset Lifecycle Automation, Security & Access Control Automation, Major Incident Management, and ITSM process automation.
+This portfolio demonstrates hands-on ServiceNow projects using Business Rules, Client Scripts, GlideAjax, Script Includes, Scripted REST APIs, RESTMessageV2, Flow Designer, Import Sets, Transform Maps, Update Sets, CMDB, Problem Management, Change Management, SLA Management, Knowledge Management, Reporting & Dashboard Automation, Asset Lifecycle Automation, Security & Access Control Automation, Major Incident Management, Scheduled Jobs & Notifications Automation, and ITSM process automation.
 
 ## Overview
 
 This repository contains ServiceNow automation projects built in a ServiceNow Personal Developer Instance.
 
-The projects are designed around real-world ITSM scenarios such as Incident data quality, form behavior automation, caller validation, REST integrations, Service Catalog fulfillment, Import Set processing, Update Set deployment validation, CMDB data quality, Problem Management root cause automation, Change Management risk validation, SLA escalation automation, Knowledge Management publishing automation, ITSM reporting/dashboard preparation, Asset Lifecycle automation, ServiceNow access governance, and Major Incident Management automation.
+The projects are designed around real-world ITSM scenarios such as Incident data quality, form behavior automation, caller validation, REST integrations, Service Catalog fulfillment, Import Set processing, Update Set deployment validation, CMDB data quality, Problem Management root cause automation, Change Management risk validation, SLA escalation automation, Knowledge Management publishing automation, ITSM reporting/dashboard preparation, Asset Lifecycle automation, ServiceNow access governance, Major Incident Management automation, and Scheduled Jobs & Notifications automation.
 
 The goal of this portfolio is to demonstrate practical ServiceNow Administrator, ITSM Analyst, and Junior ServiceNow Developer skills using production-style patterns.
 
@@ -25,6 +25,7 @@ The goal of this portfolio is to demonstrate practical ServiceNow Administrator,
 * Reporting & Dashboard Automation
 * Asset Lifecycle Automation
 * Security & Access Control Automation
+* Scheduled Jobs & Notifications Automation
 * Hardware Asset Management basics
 * CMDB
 * Configuration Items
@@ -48,9 +49,12 @@ The goal of this portfolio is to demonstrate practical ServiceNow Administrator,
 * Coalesce-based duplicate prevention
 * Update Sets and deployment practices
 * Background Scripts
+* Scheduled Script Execution logic
+* Notification-style automation
 * SLA breach validation
 * Escalation logic
 * Knowledge publishing validation
+* Knowledge expiry review
 * Incident-to-Knowledge automation
 * Asset-to-CI synchronization
 * Asset lifecycle validation
@@ -59,6 +63,7 @@ The goal of this portfolio is to demonstrate practical ServiceNow Administrator,
 * ITSM reporting logic
 * Access governance reporting
 * Major Incident service impact reporting
+* Scheduled ITSM summary reporting
 * Reusable helper functions
 * ITSM process automation
 
@@ -90,7 +95,8 @@ It includes projects that demonstrate:
 * Inactive user, group membership, and elevated access audit scripts
 * Major Incident priority, assignment, communication, and resolution validation
 * Major Incident service impact reporting using GlideAggregate
-* Background Scripts for operational audits, reporting, access review, Major Incident review, and data quality checks
+* Scheduled checks for Critical Incidents, breached SLAs, expired Knowledge Articles, inactive users, and unassigned assets
+* Background Scripts for operational audits, reporting, access review, Major Incident review, scheduled review, and data quality checks
 
 ## Projects
 
@@ -174,6 +180,12 @@ Production-style ServiceNow Major Incident Management automation project focused
 
 This project includes Priority 1 and Priority 2 validation for Major Incidents, assignment group requirement enforcement, work note validation for Critical Major Incidents, close note validation before resolution, active Major Incident audit checks, and Major Incident counts grouped by Business Service using GlideAggregate.
 
+## 17. Scheduled Jobs & Notifications Automation
+
+Production-style ServiceNow scheduled automation project focused on recurring ITSM checks, notification-style reminders, operational review, and admin reporting.
+
+This project includes daily Critical Incident review checks, breached SLA reminder checks, expired Knowledge Article checks, inactive user access review reminders, unassigned In Use asset review checks, and a scheduled ITSM summary report using GlideAggregate.
+
 ## Repository Structure
 
 ```text
@@ -195,6 +207,7 @@ servicenow-itsm-automation-portfolio/
 ├── 14-asset-lifecycle-automation/
 ├── 15-security-access-control-automation/
 ├── 16-major-incident-management-automation/
+├── 17-scheduled-jobs-notifications-automation/
 │
 └── README.md
 ```
@@ -219,10 +232,10 @@ servicenow-itsm-automation-portfolio/
 * Asset Lifecycle automation
 * ServiceNow Security and Access Control automation
 * Major Incident Management automation
+* Scheduled Jobs and Notifications automation
 
 ## Planned Next
 
-* Scheduled Jobs & Notifications Automation
 * HR / Employee Service Request Automation
 
 ## Disclaimer
@@ -231,13 +244,12 @@ All scripts in this repository are sample portfolio scripts created in a Service
 
 No client, company, customer, or production data is included.
 
-These examples are intended to demonstrate ServiceNow scripting concepts, ITSM automation patterns, reporting logic, asset lifecycle governance, access governance, Major Incident Management, and practical ServiceNow administration/development skills.
+These examples are intended to demonstrate ServiceNow scripting concepts, ITSM automation patterns, reporting logic, asset lifecycle governance, access governance, Major Incident Management, scheduled automation, notification-style review logic, and practical ServiceNow administration/development skills.
 
 ## Author
 
 Mohammed Nadeem
 ServiceNow Administrator | ITSM Analyst | Junior ServiceNow Developer
-
 
 
 
